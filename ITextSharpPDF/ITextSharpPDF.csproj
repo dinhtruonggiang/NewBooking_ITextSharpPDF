@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2743AC1C-50F6-4F5D-9B4B-EB7A073B2DF3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITextSharpPDF</RootNamespace>
+    <AssemblyName>ITextSharpPDF</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.10\lib\itextsharp.xmlworker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AbsenceCategoryDto.cs" />
+    <Compile Include="DTO\AbsenceDto.cs" />
+    <Compile Include="DTO\BlockedDemoWorkerDto.cs" />
+    <Compile Include="DTO\ChainReportDto.cs" />
+    <Compile Include="DTO\ContactDTO.cs" />
+    <Compile Include="DTO\CustomerDto.cs" />
+    <Compile Include="DTO\DemoReportDto.cs" />
+    <Compile Include="DTO\DemoSiteDto.cs" />
+    <Compile Include="DTO\DemoWorkerDto.cs" />
+    <Compile Include="DTO\DemoWorkerRegionDto.cs" />
+    <Compile Include="DTO\EquipmentDto.cs" />
+    <Compile Include="DTO\GoodDto.cs" />
+    <Compile Include="DTO\InvoiceDto.cs" />
+    <Compile Include="DTO\InvoiceReportDto.cs" />
+    <Compile Include="DTO\KMSatDto.cs" />
+    <Compile Include="DTO\MessageResult.cs" />
+    <Compile Include="DTO\MissionAttachmentDto.cs" />
+    <Compile Include="DTO\MissionCancelledDto.cs" />
+    <Compile Include="DTO\MissionDto.cs" />
+    <Compile Include="DTO\MissionEquipmentDto.cs" />
+    <Compile Include="DTO\MissionHistoryDto.cs" />
+    <Compile Include="DTO\MissionInvoiceDto.cs" />
+    <Compile Include="DTO\MissionPeriodReportDto.cs" />
+    <Compile Include="DTO\MissionProductDto.cs" />
+    <Compile Include="DTO\MissionReportDto.cs" />
+    <Compile Include="DTO\MissionWithoutDemositeDto.cs" />
+    <Compile Include="DTO\PhoneCostDto.cs" />
+    <Compile Include="DTO\PostcodeDto.cs" />
+    <Compile Include="DTO\PriceGroupDto.cs" />
+    <Compile Include="DTO\RegionDto.cs" />
+    <Compile Include="DTO\ResponsePagingObject.cs" />
+    <Compile Include="DTO\SalaryDto.cs" />
+    <Compile Include="DTO\SalaryReportDto.cs" />
+    <Compile Include="DTO\TreePermissionDto.cs" />
+    <Compile Include="DTO\UnconfirmedMissionCreationDto.cs" />
+    <Compile Include="DTO\UnconfirmedMissionReportDto.cs" />
+    <Compile Include="DTO\WorkingDaySettingDto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\checkbox_unchecked.png" />
+    <Content Include="images\checked_checkbox.png" />
+    <Content Include="images\checkmark.png" />
+    <Content Include="images\logo3.png" />
+    <EmbeddedResource Include="missionCssTemplate.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="missionHtmlTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+table {
+	width:100%;
+	border-collapse: collapse;
+}
+table tr td{
+	font-size: 9pt;
+	padding: 5px 10px 5px 5px;
+}
+
+table tr td.number{
+	text-align: right;
+}
+
+div.break-line {
+	line-height:15px;
+}

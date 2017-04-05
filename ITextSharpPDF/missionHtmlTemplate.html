@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td style="width:15%">
+				<img src="{{logoImg}}" style="max-width:120px;max-height:110px;"/>
+			</td>
+			<td style="width:85%;text-align:right">
+				<h1 style="font-size:18pt;">OPPDRAGSSKJEMA FOR OPPDRAG NR. {{missionId}}</h1>
+			</td>			
+		</tr>
+	</table>
+	<div style="line-height:30px;">
+		<br/>
+	</div>
+	<table>
+		<tr>
+			<td style="width:50%">Date: {{missionDate}}</td>
+			<td style="width:50%;text-align:right">Initial / {{currentDate}}</td>			
+		</tr>
+	</table>
+	<div style="padding-left:15px;">
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>						
+				<td style="width:50%;">Oppdragsgiver: {{customer1}} </td>
+				<td style="width:50%;">Kontaktperson: {{demoSiteContactName}}</td>			
+			</tr>
+		</table>
+		<!--Customer2
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>						
+				<td style="width:100%;">Oppdragsgiver 2: {{customer2}} </td>
+			</tr>
+		</table>
+		Customer2-->
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>
+				<td style="width:50%;">Kontaktperson i butikk: {{shopContactPersonName}}</td>
+				<td style="width:50%;">Avtalt plassering i butikk: {{shopAgreedUponPlacement}}</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:33%;">Produkt: {{product1}}</td>
+				<td style="width:33%;">Kategori: {{productCat1}}</td>			
+				<td style="width:33%;">Underkat: {{productSubCat1}}</td>			
+			</tr>
+		</table>
+		<!--Customer2
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:33%;">Produkt 2: {{product2}}</td>
+				<td style="width:33%;">Kategori 2: {{productCat2}}</td>			
+				<td style="width:33%;">Underkat 2: {{productSubCat2}}</td>			
+			</tr>
+		</table>
+		Customer2-->
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:33%;">Antrekk: {{dress}}</td>
+				<td style="width:33%;">Front: {{front}}</td>			
+				<td style="width:33%;">Rollups/Popups: {{rollups}}</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table style="width:100%">
+			<tr>				
+				<td style="width:13%;">
+					Demoutstyr:
+				</td>
+				<td style="width:12%;">
+					<img src="{{bordCheckImg}}" style="max-width:16px;max-height:16px;"/>
+					Bord
+				</td>
+				<td style="width:15%;">
+					<img src="{{stekeovnCheckImg}}" style="max-width:16px;max-height:16px;"/>
+					Stekeovn
+				</td>
+				<td style="width:15%;">
+					<img src="{{kokeplateCheckImg}}" style="max-width:16px;max-height:16px;"/>
+					Kokeplate
+				</td>
+				<td style="width:18%;">
+					<img src="{{mikrobCheckImg}}" style="max-width:16px;max-height:16px;"/>
+					Mikrobølgeovn
+				</td>				
+				<td style="width:27%;">
+					<img src="{{reportMissionCheckImg}}" style="max-width:16px;max-height:16px;"/>
+					Rapport oppdragsgiver
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:50%;">
+					Annet utstyr:
+				</td>
+				<td style="width:50%;">
+					Informasjon:
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50">
+					{{other}}
+				</td>
+				<td style="width:50%;border:solid 1px">
+					{{info}}
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="colspan:5;width:100%;font-size:9pt">
+					Demomedarbeider: {{demoWorker}}
+				</td>
+			</tr>
+			<tr>				
+				<td style="width:20%;border:1px solid;height:30">
+					Demosted
+				</td>
+				<td style="width:20%;border:1px solid" class="number">
+					Telefon
+				</td>
+				<td style="width:20%;border:1px solid" class="number">
+					Dato
+				</td>			
+				<td style="width:20%;border:1px solid" class="number">
+					Fra
+				</td>						
+				<td style="width:20%;border:1px solid" class="number">
+					Til
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:20%;border:1px solid;height:30">
+					{{demoSite}}
+				</td>
+				<td style="width:20%;border:1px solid" class="number">
+					{{phoneNo}}
+				</td>
+				<td style="width:20%;border:1px solid" class="number">
+					{{missionDate}}
+				</td>			
+				<td style="width:20%;border:1px solid" class="number">
+					{{start}}
+				</td>						
+				<td style="width:20%;border:1px solid" class="number">
+					{{end}}
+				</td>			
+			</tr>
+		</table>
+		
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>						
+				<td style="width:50%;">Adresse: {{address}}</td>
+				<td style="width:50%;">Account: (Konto: {{account}})</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>
+				
+				<td style="width:50%;">
+					Endre kontonr .:
+				</td>
+				<td style="width:50%;">
+					Varer ankommet
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50">
+					{{account}}
+				</td>
+				<td style="width:50%;border:solid 1px">
+					{{received}}			
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:100%;">
+					Oppdragsgiver: {{customer1}}
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>	
+				<td style='width:30px;border:1px solid;height:30'>
+					&nbsp;
+				</td>			
+				<td style='width:200px;font-size:8pt;border:1px solid'>
+					Produkt
+				</td>
+				<td style='width:140px;font-size:8pt;border:1px solid'>
+					ProduktKategori
+				</td>
+				<td style='width:130px;font-size:8pt;border:1px solid'>
+					UnderKategori
+				</td>			
+				<td style='width:140px;font-size:8pt;border:1px solid'>
+					Antall smaksprøver utdelt 
+				</td>						
+				<td style='width:100px;font-size:8pt;border:1px solid'>
+					Antall beger/bestikk 
+				</td>			
+				<td style='width:75px;font-size:8pt;border:1px solid'>
+					Antall salg
+				</td>			
+			</tr>
+			{{Customer1_ProductZone}}
+		</table>
+		<!--Customer2
+		<div class="break-line">
+			<br/>
+		</div>		
+		<table>
+			<tr>				
+				<td style="width:100%;">
+					Oppdragsgiver: {{customer2}}
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>	
+				<td style='width:30px;border:1px solid;height:30'>
+					&nbsp;
+				</td>			
+				<td style='width:200px;font-size:8pt;border:1px solid'>
+					Produkt
+				</td>
+				<td style='width:140px;font-size:8pt;border:1px solid'>
+					ProduktKategori
+				</td>
+				<td style='width:130px;font-size:8pt;border:1px solid'>
+					UnderKategori
+				</td>			
+				<td style='width:140px;font-size:8pt;border:1px solid'>
+					Antall smaksprøver utdelt 
+				</td>						
+				<td style='width:100px;font-size:8pt;border:1px solid'>
+					Antall beger/bestikk 
+				</td>			
+				<td style='width:75px;font-size:8pt;border:1px solid'>
+					Antall salg
+				</td>			
+			</tr>
+			{{Customer2_ProductZone}}
+		</table>
+		Customer2-->
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:33%;">
+					Antall smaksprøver utdelt:
+				</td>
+				<td style="width:33%;">
+					Antall beger/bestikk:
+				</td>		
+				<td style="width:33%;">
+					Antall salg:
+				</td>			
+			</tr>
+			<tr>
+				
+				<td style="width:50%;border:solid 1px;height:50">
+					{{sample}}
+				</td>
+				<td style="width:50%;border:solid 1px">
+					{{accessories}}			
+				</td>	
+				<td style="width:50%;border:solid 1px">
+					{{sales}}
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:100%;">
+					Fordeler/ Egenskaper/ Argument fra kunden på produktene:
+				</td>
+			</tr>
+			<tr>				
+				<td style="width:100%;border:solid 1px;height:50">
+					{{feedbackCustomer}}
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:100%;">
+					Mottagelse i butikk:
+				</td>
+			</tr>
+			<tr>				
+				<td style="width:100%;border:solid 1px;height:50">
+					{{feedBackDemoSite}}
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="colspan:5;width:100%;font-size:13pt">
+					Varer
+				</td>
+			</tr>
+			<tr>
+				<td style="height:10"></td>
+			</tr>
+			<tr>
+				
+				<td style="colspan:2;width:50%;font-size:9pt">
+					Fylles ut hvis varer tas fra butikk:
+				</td>
+				<td style="colspan:2;width:50%;font-size:9pt">
+					Fylles ut av oppdragsgiver:
+				</td>
+			</tr>
+			<tr>				
+				<td style="colspan:2;width:50%;border:1px solid;height:30">
+					Varer brukt under demo
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					Antall
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					Pris pr pakke
+				</td>				
+			</tr>
+			<tr>				
+				<td style="colspan:2;width:50%;border:1px solid;height:30">
+					{goodName1}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodAmount1}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodPrice1}
+				</td>				
+			</tr>
+			<tr>
+				
+				<td style="colspan:2;width:50%;border:1px solid;height:30">
+					{goodName2}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodAmount2}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodPrice2}
+				</td>				
+			</tr>
+			<tr>				
+				<td style="colspan:2;width:50%;border:1px solid;height:30">
+					{goodName3}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodAmount3}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodPrice3}
+				</td>				
+			</tr>
+			<tr>				
+				<td style="colspan:2;width:50%;border:1px solid;height:30">
+					{goodName4}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodAmount4}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodPrice4}
+				</td>				
+			</tr>
+			<tr>				
+				<td style="colspan:2;width:50%;border:1px solid;height:30">
+					{goodName5}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodAmount5}
+				</td>
+				<td style="width:25%;border:1px solid" class="number">
+					{goodPrice5}
+				</td>				
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:100%;font-size:10pt">
+					Sign. demomedarbeider / butikk
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:100%;font-size:13pt">
+					Timer og kilometer for utført demo
+				</td>
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:50%;">
+					Start butikk kl.:
+				</td>
+				<td style="width:50%;">
+					Km. start:
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50" class="number">
+					{{startHour}}
+				</td>
+				<td style="width:50%;border:solid 1px" class="number">
+					{{kmStart}}			
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:50%;">
+					Slutt butikk kl.:
+				</td>
+				<td style="width:50%;">
+					Km. hjemme:
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50" class="number">
+					{{endHour}}
+				</td>
+				<td style="width:50%;border:solid 1px" class="number">
+					{{kmEnd}}				
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:50%;">
+					Ekstra kjøring:(kun ved avtale)
+				</td>
+				<td style="width:50%;">
+					Sum km.:
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50" class="number">
+					{{extraTransport}}
+				</td>
+				<td style="width:50%;border:solid 1px" class="number">
+					{{kmTotal}}			
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:50%;">
+					Arbeidstimer:
+				</td>
+				<td style="width:50%;">
+					Bompassering/Piggavgift kr .:
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50" class="number">
+					{{totalHour}}
+				</td>
+				<td style="width:50%;border:solid 1px" class="number">
+					{{bought}}			
+				</td>			
+			</tr>
+		</table>
+		<div class="break-line">
+			<br/>
+		</div>
+		<table>
+			<tr>				
+				<td style="width:50%;">
+					Timelønn:
+				</td>
+				<td style="width:50%;">
+				</td>			
+			</tr>
+			<tr>				
+				<td style="width:50%;border:solid 1px;height:50" class="number">
+					{{salary}}
+				</td>
+				<td style="width:50%;">
+				</td>			
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
